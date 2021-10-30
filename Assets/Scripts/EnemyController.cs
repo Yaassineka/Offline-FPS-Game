@@ -41,13 +41,14 @@ public class EnemyController : MonoBehaviour
         health -= amount;
         if(health <= 0)
         {
+            health = 1000;
+            Destroy(col);
             Die();
         }
     }
     void Die()
     {
-        Destroy(healthSlider);
-        Destroy(col);
+        Destroy(healthSlider); 
         enemy.speed = 0f;
         anim.SetBool("Die", true);
 

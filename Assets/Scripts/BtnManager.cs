@@ -12,6 +12,9 @@ public class BtnManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         KillCounter.kills = 0;
         KillCounter.Coins = 0;
+        HealthPL.health = 100f;
+        AK.maxAmmo = 240;
+        AK.numAmmo = 33; 
     }
     
     public void QuitGame()
@@ -20,6 +23,9 @@ public class BtnManager : MonoBehaviour
         Debug.Log("Quit");
         KillCounter.kills = 0;
         KillCounter.Coins = 0;
+        HealthPL.health = 100f;
+        AK.maxAmmo = 240;
+        AK.numAmmo = 33;
     }
     public void PlayAgain()
     {
@@ -27,6 +33,9 @@ public class BtnManager : MonoBehaviour
         KillCounter.kills = 0;
         KillCounter.Coins = 0;
         Time.timeScale = 1f;
+        HealthPL.health = 100f;
+        AK.maxAmmo = 240;
+        AK.numAmmo = 33;
     }
     public void MainMenu()
     {
@@ -35,6 +44,9 @@ public class BtnManager : MonoBehaviour
         KillCounter.kills = 0;
         KillCounter.Coins = 0;
         Time.timeScale = 1f;
+        HealthPL.health = 100f;
+        AK.maxAmmo = 240;
+        AK.numAmmo = 33;
 
     }
     public void OpenUrl()
@@ -52,5 +64,8 @@ public class BtnManager : MonoBehaviour
         KillCounter.kills = 0;
         KillCounter.Coins = 0;
         Time.timeScale = 1f;
+        HealthPL.health = 100f;
+        AK.maxAmmo = 240;
+        AK.numAmmo = 33;
     }
 }

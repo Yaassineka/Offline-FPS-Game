@@ -14,11 +14,11 @@ public class AK : MonoBehaviour
     [SerializeField] Text maxAmmotxt;
     public static int maxAmmo = 240;
     [SerializeField] int reloadAmmo = 0;
-    [SerializeField] int numAmmo;
+    public static int numAmmo;
     bool isRealoading = false;
 
 
-    [SerializeField] float damage = 10f;
+    [SerializeField] float damage = 13f;
     [SerializeField] float range = 100f;
     [SerializeField] float fireRate = 15f;
     [SerializeField] Camera cam;

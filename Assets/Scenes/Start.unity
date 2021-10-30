@@ -796,7 +796,7 @@ MonoBehaviour:
     Jump
     : SPACE.
 
-    Shoot : MOUSE 0.
+    Fire : MOUSE 0.
 
     Pause : P.
 

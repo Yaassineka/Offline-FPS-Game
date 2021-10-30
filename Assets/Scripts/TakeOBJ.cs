@@ -25,25 +25,25 @@ public class TakeOBJ : MonoBehaviour
 
         IEnumerator AmmoDrop()
         {
-            yield return new WaitForSeconds(10f);
+            yield return new WaitForSeconds(1f);
 
-            while (ammoCount < 10)
+            while (ammoCount < 5)
             {
-                xPos = Random.Range(-41, 41);
-                zPos = Random.Range(-61, 61);
-                Instantiate(boxAmmo, new Vector3(xPos, 1.5f, zPos), Quaternion.identity);
+                xPos = Random.Range(-3, 20);
+                zPos = Random.Range(-9, 8);
+                Instantiate(boxAmmo, new Vector3(xPos, 1.37f, zPos), Quaternion.identity);
                 ammoCount++;
             }
         }
         IEnumerator HealthDrop()
         {
-            yield return new WaitForSeconds(10f);
+            yield return new WaitForSeconds(1f);
 
-            while (healthCount < 10)
+            while (healthCount < 5)
             {
-                xPos = Random.Range(-41, 41);
-                zPos = Random.Range(-61, 61);
-                Instantiate(boxHealth, new Vector3(xPos, 1.5f, zPos), Quaternion.identity);
+                xPos = Random.Range(-3, 20);
+                zPos = Random.Range(-9, 8);
+                Instantiate(boxHealth, new Vector3(xPos, 1.37f, zPos), Quaternion.identity);
                 healthCount++;
             }
         }

@@ -41,8 +41,10 @@ public class HealthPL : MonoBehaviour
         {
             SceneManager.LoadScene("GameOver");
             health = 100f;
-            Cursor.lockState = CursorLockMode.None;
+            AK.maxAmmo = 240;
+            AK.numAmmo = 33;
             KillCounter.Coins = 0;
+            Cursor.lockState = CursorLockMode.None; 
         }
 
         healthText.text = "" + health;      
